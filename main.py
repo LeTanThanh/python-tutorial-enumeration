@@ -9,3 +9,18 @@ if __name__ == "__main__":
   print(isinstance(Color.RED, Color)) # True
   print(Color.RED.name)               # RED
   print(Color.RED.value)              # 1
+
+  ## Membership and equality
+
+  if Color.RED in Color:
+    print("Yes")
+
+  if Color.RED is Color.BLUE:
+    print("red is blue")
+  else:
+    print("red is not blue")
+
+  if Color.RED == 1:
+    print("Color.RED == 1")
+  else:
+    print("Color.RED != 1")
