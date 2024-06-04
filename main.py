@@ -45,3 +45,9 @@ if __name__ == "__main__":
     print(color)
 
   print(list(Color))
+
+  ## Enumerations are immutable
+
+  # Color["YELLOW"] = 4 # TypeError: 'EnumMeta' object does not support item assignment
+
+  # Color.RED.value = 100 # AttributeError: <enum 'Enum'> cannot set attribute 'value'
