@@ -38,3 +38,10 @@ if __name__ == "__main__":
   print(Color["RED"])             # Color.RED
   print(Color(1))                 # Color.RED
   print(Color["RED"] == Color(1)) # True
+
+  ## Iterate enumeration members
+
+  for color in Color:
+    print(color)
+
+  print(list(Color))
