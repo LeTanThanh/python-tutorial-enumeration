@@ -1,4 +1,7 @@
 from color import Color
+from response_status import ResponseStatus
+
+import json
 
 # Python Enumeration
 
@@ -51,3 +54,15 @@ if __name__ == "__main__":
   # Color["YELLOW"] = 4 # TypeError: 'EnumMeta' object does not support item assignment
 
   # Color.RED.value = 100 # AttributeError: <enum 'Enum'> cannot set attribute 'value'
+
+  ## Inherits from an enumeration
+
+  ## Python enumeration example
+
+  response = '''{
+      "status": "fulfilled"
+  }'''
+
+  data = json.loads(response)
+  status = data["status"]
+  print(ResponseStatus(status))
