@@ -24,3 +24,11 @@ if __name__ == "__main__":
     print("Color.RED == 1")
   else:
     print("Color.RED != 1")
+
+  ## Enumeration members are hashable
+
+  rgb = {
+    Color.RED: "#ff0000",
+    Color.GREEN: "#00ff00",
+    Color.BLUE: "#0000ff"
+  }
