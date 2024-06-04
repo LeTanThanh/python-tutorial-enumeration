@@ -32,3 +32,9 @@ if __name__ == "__main__":
     Color.GREEN: "#00ff00",
     Color.BLUE: "#0000ff"
   }
+
+  ## Access an enumeration member by name and value
+
+  print(Color["RED"])             # Color.RED
+  print(Color(1))                 # Color.RED
+  print(Color["RED"] == Color(1)) # True
